@@ -57,7 +57,7 @@ services:
     environment:
       - JAVA_OPTS=-Xms64m -Xmx128m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom -Dspring.zipkin.enabled=false
   carts-db:
-    image: mongo:3.4
+    image: mongo:3.7
     hostname: carts-db
     restart: always
     cap_drop:
@@ -83,7 +83,7 @@ services:
     environment:
       - JAVA_OPTS=-Xms64m -Xmx128m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom -Dspring.zipkin.enabled=false
   orders-db:
-    image: mongo:3.4
+    image: mongo:3.7
     hostname: orders-db
     restart: always
     cap_drop:
