@@ -3,6 +3,12 @@
   "extends": [
     "config:base"
   ],
-    "prHourlyLimit": 10
+    "prHourlyLimit": 25
+    "packageRules": [
+     {
+       "matchUpdateTypes": ["major"],
+       "dependencyDashboardApproval": true
+     }
+    ]
 
 }
