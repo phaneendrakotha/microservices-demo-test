@@ -154,7 +154,7 @@ services:
     environment:
       - MONGO_HOST=user-db:27017
   user-db:
-    image: weaveworksdemos/user-db:0.4.0
+    image: weaveworksdemos/user-db:0.4.7
     hostname: user-db
     restart: always
     cap_drop:
