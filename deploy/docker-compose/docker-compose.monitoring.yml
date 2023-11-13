@@ -19,7 +19,7 @@ services:
         links:
           - alertmanager:alertmanager
     nodeexporter:
-        image: quay.io/prometheus/node-exporter:v1.3.1
+        image: quay.io/prometheus/node-exporter:v1.7.0
         container_name: nodeexporter
         volumes:
           - '/:/host:ro,rslave'
